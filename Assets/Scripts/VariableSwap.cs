@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VariableSwap : MonoBehaviour
 {
-    void Swap(int n, int m)
+    public void Swap(int n, int m)
     {
         int change = n;
         n = m;
@@ -12,7 +12,7 @@ public class VariableSwap : MonoBehaviour
         Debug.Log("VALORI DENTRO LA PRIMA FUNZIONE SWAP: N = " + n + " M = " + m);
     }
 
-    void Swap(ref int n, ref int m)
+    public void Swap(ref int n, ref int m)
     {
         int change = n;
         n = m;
